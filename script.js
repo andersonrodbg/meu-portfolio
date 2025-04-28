@@ -1,29 +1,28 @@
-document.getElementById('form-contato').addEventListener('submit', function(event) {
-    event.preventDefault();
-    alert('Mensagem enviada! Obrigado pelo contato.');
-  });
-  
-  const texto = "Anderson";
-  const elemento = document.getElementById("nome-anderson");
+const texto = "Meu nome é Anderson";
+let index = 0;
+let escrevendo = true;
+const nomeAnderson = document.getElementById('nome-anderson');
 
-  let index = 0;
-  let apagando = false;
-
-  function typeEffect() {
-    if (!apagando) {
-      elemento.textContent = texto.slice(0, index++);
-      if (index > texto.length) {
-        apagando = true;
-        setTimeout(typeEffect, 1500); 
-        return;
-      }
+function typeEffect() {
+  if (escrevendo) {
+    if (index < texto.length) {
+      nomeAnderson.innerHTML += texto.charAt(index);
+      index++;
+      setTimeout(typeEffect, 100);
     } else {
-      elemento.textContent = texto.slice(0, --index);
-      if (index === 0) {
-        apagando = false;
-      }
+      escrevendo = false;
+      setTimeout(typeEffect, 2000); // Espera 2s antes de apagar
     }
-    setTimeout(typeEffect, apagando ? 100 : 200); 
+  } else {
+    if (index > 0) {
+      nomeAnderson.innerHTML = texto.substring(0, index - 1);
+      index--;
+      setTimeout(typeEffect, 50);
+    } else {
+      escrevendo = true;
+      setTimeout(typeEffect, 500); // Espera antes de começar de novo
+    }
   }
+}
 
-  typeEffect();
+typeEffect();
