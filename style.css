@@ -1,11 +1,28 @@
-/* Estilos gerais */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
+    font-family: 'Popping', sans-serif;
   }
   
+  #nome-anderson::after {
+    content: "|";
+    animation: blink 0.7s infinite;
+    margin-left: 5px;
+  }
+  
+  @keyframes blink {
+    0%, 50% {
+      opacity: 1;
+    }
+    51%, 100% {
+      opacity: 0;
+    }
+  }
+  
+
   header {
     background-color: #333;
     color: #fff;
@@ -32,7 +49,7 @@ body {
     padding: 2rem;
   }
   
-  /* Estilos de Habilidades */
+ 
   .habilidades-container {
     display: flex;
     flex-wrap: wrap;
@@ -49,7 +66,7 @@ body {
     border-radius: 10px;
     width: 120px;
     transition: transform 0.3s;
-    background-color: #e0e0e0; /* Cor de fundo padrão */
+    background-color: #e0e0e0; 
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
   
@@ -94,7 +111,7 @@ body {
     background-color: #f8981d !important;
   }
   
-  /* Formulário de Contato */
+
   form {
     display: flex;
     flex-direction: column;
@@ -123,7 +140,7 @@ body {
     padding: 1rem 0;
   }
   
-  /* Media Query para telas menores que 768px (como tablets e celulares) */
+ 
   @media screen and (max-width: 768px) {
     .habilidades-container {
       flex-direction: column;
@@ -131,7 +148,7 @@ body {
     }
   
     .habilidade {
-      width: 80%;  /* Ajusta o tamanho das habilidades */
+      width: 80%;  
       margin-bottom: 1rem;
     }
   
@@ -149,18 +166,18 @@ body {
     }
   
     .habilidade i {
-      font-size: 2rem;  /* Reduz o tamanho do ícone */
+      font-size: 2rem;  
     }
   }
   
-  /* Media Query para telas menores que 480px (como celulares em retrato) */
+ 
   @media screen and (max-width: 480px) {
     .habilidade {
-      width: 90%;  /* Ajusta ainda mais o tamanho das habilidades */
+      width: 90%;  
     }
   
     .habilidade i {
-      font-size: 1.5rem;  /* Ícones ainda menores */
+      font-size: 1.5rem;  
     }
   
     header {
@@ -168,7 +185,7 @@ body {
     }
   
     .habilidade span {
-      font-size: 0.9rem;  /* Diminui o tamanho do texto */
+      font-size: 0.9rem; 
     }
   
     form input, form textarea {
@@ -179,4 +196,5 @@ body {
       padding: 0.5rem;
     }
   }
+  
   
