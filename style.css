@@ -1,12 +1,36 @@
+/* Fonte moderna já importada no HTML: Poppins */
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f5f7fa;
+    color: #333333;
     line-height: 1.6;
-    font-family: 'Popping', sans-serif;
   }
   
+  /* Header moderno */
+  header {
+    background: linear-gradient(90deg, #6366f1, #0ea5e9);
+    color: white;
+    text-align: center;
+    padding: 3rem 1rem;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+  }
+  
+  header p {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+  }
+  
+  /* Estilo para a animação de digitação */
   #nome-anderson::after {
     content: "|";
     animation: blink 0.7s infinite;
@@ -22,179 +46,92 @@ body {
     }
   }
   
-
-  header {
-    background-color: #333;
-    color: #fff;
-    padding: 1rem 0;
+  /* Container das seções */
+  section {
+    padding: 4rem 2rem;
     text-align: center;
   }
   
-  nav ul {
-    list-style: none;
-    padding: 0;
+  /* Seção sobre */
+  #sobre {
+    max-width: 800px;
+    margin: 0 auto;
   }
   
-  nav ul li {
-    display: inline;
-    margin: 0 10px;
+  #sobre h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
   }
   
-  nav ul li a {
-    color: #fff;
-    text-decoration: none;
+  #sobre p {
+    font-size: 1.1rem;
   }
   
-  section {
-    padding: 2rem;
-  }
-  
- 
+  /* Habilidades */
   .habilidades-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 2rem;
     justify-content: center;
-    padding: 2rem 0;
+    gap: 2rem;
+    margin-top: 3rem;
   }
   
   .habilidade {
+    background: white;
+    padding: 2rem;
+    border-radius: 20px;
+    width: 140px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 1rem;
-    border-radius: 10px;
-    width: 120px;
-    transition: transform 0.3s;
-    background-color: #e0e0e0; 
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  
-  .habilidade i {
-    font-size: 3rem;
-    margin-bottom: 0.5rem;
-    color: white;
-  }
-  
-  .habilidade span {
-    font-weight: bold;
-    font-size: 1rem;
-    color: white;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
   }
   
   .habilidade:hover {
-    transform: scale(1.1);
-    background-color: #ccc;
+    transform: translateY(-8px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
   }
   
-  .html {
-    background-color: #e34c26 !important;
+  /* Ícones das habilidades */
+  .habilidade i {
+    font-size: 2.5rem;
+    margin-bottom: 0.8rem;
   }
   
-  .css {
-    background-color: #264de4 !important;
+  /* Cores específicas para cada habilidade */
+  .html-icon { color: #e34c26; }
+  .css-icon { color: #264de4; }
+  .js-icon { color: #f0db4f; }
+  .git-icon { color: #f1502f; }
+  .mysql-icon { color: #00758f; }
+  .java-icon { color: #007396; }
+  
+  /* Nome da habilidade */
+  .habilidade p {
+    margin: 0;
+    font-weight: 600;
+    font-size: 1.1rem;
   }
   
-  .js {
-    background-color: #f7df1e !important;
-  }
-  
-  .git {
-    background-color: #f1502f !important;
-  }
-  
-  .mysql {
-    background-color: #00758f !important;
-  }
-  
-  .java {
-    background-color: #f8981d !important;
-  }
-  
-
-  form {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  form input, form textarea {
-    margin-bottom: 1rem;
-    padding: 0.5rem;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-  }
-  
-  button {
-    padding: 0.7rem;
-    background: #333;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
+  /* Footer moderno */
   footer {
-    background-color: #333;
-    color: #fff;
+    background: #0f172a;
+    color: white;
     text-align: center;
-    padding: 1rem 0;
+    padding: 2rem 1rem;
+    font-size: 0.9rem;
   }
   
- 
-  @media screen and (max-width: 768px) {
+  /* Responsividade */
+  @media (max-width: 768px) {
+    header h1 {
+      font-size: 2rem;
+    }
+  
     .habilidades-container {
       flex-direction: column;
       align-items: center;
     }
-  
-    .habilidade {
-      width: 80%;  
-      margin-bottom: 1rem;
-    }
-  
-    header {
-      padding: 0.5rem;
-    }
-  
-    nav ul {
-      display: block;
-      text-align: center;
-    }
-  
-    nav ul li {
-      margin: 5px 0;
-    }
-  
-    .habilidade i {
-      font-size: 2rem;  
-    }
   }
-  
- 
-  @media screen and (max-width: 480px) {
-    .habilidade {
-      width: 90%;  
-    }
-  
-    .habilidade i {
-      font-size: 1.5rem;  
-    }
-  
-    header {
-      padding: 0.3rem;
-    }
-  
-    .habilidade span {
-      font-size: 0.9rem; 
-    }
-  
-    form input, form textarea {
-      padding: 0.4rem;
-    }
-  
-    button {
-      padding: 0.5rem;
-    }
-  }
-  
   
