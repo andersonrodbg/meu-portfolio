@@ -56,46 +56,45 @@ body {
   .habilidade i {
     font-size: 3rem;
     margin-bottom: 0.5rem;
-    color: white; /* Ícones brancos */
+    color: white;
   }
   
   .habilidade span {
     font-weight: bold;
     font-size: 1rem;
-    color: white; /* Texto branco */
+    color: white;
   }
   
   .habilidade:hover {
     transform: scale(1.1);
-    background-color: #ccc; /* Cor de fundo quando o mouse passa */
+    background-color: #ccc;
   }
   
-  /* Cores específicas para cada habilidade */
   .html {
-    background-color: #e34c26 !important; /* HTML - Laranja */
+    background-color: #e34c26 !important;
   }
   
   .css {
-    background-color: #264de4 !important; /* CSS - Azul */
+    background-color: #264de4 !important;
   }
   
   .js {
-    background-color: #f7df1e !important; /* JavaScript - Amarelo */
+    background-color: #f7df1e !important;
   }
   
   .git {
-    background-color: #f1502f !important; /* Git - Laranja */
+    background-color: #f1502f !important;
   }
   
   .mysql {
-    background-color: #00758f !important; /* MySQL - Azul Escuro */
+    background-color: #00758f !important;
   }
   
   .java {
-    background-color: #f8981d !important; /* Java - Laranja Claro */
+    background-color: #f8981d !important;
   }
   
-  /* Estilos do formulário de Contato */
+  /* Formulário de Contato */
   form {
     display: flex;
     flex-direction: column;
@@ -117,11 +116,67 @@ body {
     cursor: pointer;
   }
   
-  /* Estilo para o rodapé */
   footer {
     background-color: #333;
     color: #fff;
     text-align: center;
     padding: 1rem 0;
+  }
+  
+  /* Media Query para telas menores que 768px (como tablets e celulares) */
+  @media screen and (max-width: 768px) {
+    .habilidades-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .habilidade {
+      width: 80%;  /* Ajusta o tamanho das habilidades */
+      margin-bottom: 1rem;
+    }
+  
+    header {
+      padding: 0.5rem;
+    }
+  
+    nav ul {
+      display: block;
+      text-align: center;
+    }
+  
+    nav ul li {
+      margin: 5px 0;
+    }
+  
+    .habilidade i {
+      font-size: 2rem;  /* Reduz o tamanho do ícone */
+    }
+  }
+  
+  /* Media Query para telas menores que 480px (como celulares em retrato) */
+  @media screen and (max-width: 480px) {
+    .habilidade {
+      width: 90%;  /* Ajusta ainda mais o tamanho das habilidades */
+    }
+  
+    .habilidade i {
+      font-size: 1.5rem;  /* Ícones ainda menores */
+    }
+  
+    header {
+      padding: 0.3rem;
+    }
+  
+    .habilidade span {
+      font-size: 0.9rem;  /* Diminui o tamanho do texto */
+    }
+  
+    form input, form textarea {
+      padding: 0.4rem;
+    }
+  
+    button {
+      padding: 0.5rem;
+    }
   }
   
