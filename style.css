@@ -6,6 +6,15 @@ body {
   color: #ccd6f6;
 }
 
+.logo img {
+  width: 150px; 
+  height: 150px; 
+  object-fit: cover;
+  border-radius: 50%; 
+  margin-top: 1rem;
+}
+
+
 header {
   background-color: #0a192f;
   padding: 2rem;
