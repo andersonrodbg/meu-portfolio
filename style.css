@@ -1,0 +1,127 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin: 0 10px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  section {
+    padding: 2rem;
+  }
+  
+  /* Estilos de Habilidades */
+  .habilidades-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    padding: 2rem 0;
+  }
+  
+  .habilidade {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 10px;
+    width: 120px;
+    transition: transform 0.3s;
+    background-color: #e0e0e0; /* Cor de fundo padrão */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .habilidade i {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    color: white; /* Ícones brancos */
+  }
+  
+  .habilidade span {
+    font-weight: bold;
+    font-size: 1rem;
+    color: white; /* Texto branco */
+  }
+  
+  .habilidade:hover {
+    transform: scale(1.1);
+    background-color: #ccc; /* Cor de fundo quando o mouse passa */
+  }
+  
+  /* Cores específicas para cada habilidade */
+  .html {
+    background-color: #e34c26 !important; /* HTML - Laranja */
+  }
+  
+  .css {
+    background-color: #264de4 !important; /* CSS - Azul */
+  }
+  
+  .js {
+    background-color: #f7df1e !important; /* JavaScript - Amarelo */
+  }
+  
+  .git {
+    background-color: #f1502f !important; /* Git - Laranja */
+  }
+  
+  .mysql {
+    background-color: #00758f !important; /* MySQL - Azul Escuro */
+  }
+  
+  .java {
+    background-color: #f8981d !important; /* Java - Laranja Claro */
+  }
+  
+  /* Estilos do formulário de Contato */
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  form input, form textarea {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  button {
+    padding: 0.7rem;
+    background: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Estilo para o rodapé */
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+  }
+  
