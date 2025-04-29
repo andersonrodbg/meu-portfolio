@@ -11,7 +11,7 @@ function typeEffect() {
       setTimeout(typeEffect, 100);
     } else {
       escrevendo = false;
-      setTimeout(typeEffect, 2000); // Espera 2s antes de apagar
+      setTimeout(typeEffect, 2000); 
     }
   } else {
     if (index > 0) {
@@ -20,7 +20,7 @@ function typeEffect() {
       setTimeout(typeEffect, 50);
     } else {
       escrevendo = true;
-      setTimeout(typeEffect, 500); // Espera antes de começar de novo
+      setTimeout(typeEffect, 500); 
     }
   }
 }
