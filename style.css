@@ -108,7 +108,16 @@ section {
 .git-icon { color: #f1502f; }
 .mysql-icon { color: #00758f; }
 .java-icon { color: #007396; }
-.react-icon{ color: #418dff;}
+
+
+.habilidade img {
+  width: 3rem;
+  height: 3rem;
+  margin-bottom: 0.5rem;
+  object-fit: contain;
+  display: block;
+}
+
 
 
 
