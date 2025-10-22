@@ -4,139 +4,95 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfólio - Anderson</title>
-  
+
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <header>
+  <canvas id="background"></canvas>
+
+  <header class="header">
     <nav class="navbar">
-      <div class="logo">Anderson Rodrigues Braga</div>
+      <h1 class="logo">Anderson<span>.</span></h1>
       <ul class="nav-links">
         <li><a href="#sobre">Sobre</a></li>
         <li><a href="#projetos">Projetos</a></li>
         <li><a href="#contato">Contato</a></li>
       </ul>
+      <button id="theme-toggle" aria-label="Alternar tema">
+        <i class="fas fa-moon"></i>
+      </button>
     </nav>
-    <div class="logo">
-      <img src="img/logo.jpeg" alt="Logo Anderson">
+
+    <div class="intro fade-up">
+      <h2>Olá 👋, eu sou <span class="highlight">Anderson</span></h2>
+      <p>Desenvolvedor FullStack & Criador de Experiências Digitais</p>
+      <a href="#projetos" class="btn">Ver Projetos</a>
     </div>
-    <div class="header-content">
-      <h1>Olá, <span id="nome-anderson"></span></h1>
-      <p>Software Engineer</p>
+
+    <div class="scroll-down">
+      <i class="fa-solid fa-angles-down"></i>
     </div>
   </header>
 
-  <section id="sobre">
+  <section id="sobre" class="section fade-up">
     <h2>Sobre Mim</h2>
-    <div class="sobre-container">
-      <p>Olá! Meu nome é Anderson, tenho 20 anos e sou estudante de Análise e Desenvolvimento de Sistemas, atualmente no terceiro semestre.</p>
-  
-      <p>Sou apaixonado por tecnologia e desenvolvimento web. Desde que iniciei minha jornada na programação, venho me especializando em criar aplicações modernas, responsivas e com foco em experiência do usuário.</p>
-  
-      <p>Tenho conhecimento em tecnologias como HTML, CSS, JavaScript, Git, MySQL e Java. Estou sempre em busca de novos desafios para evoluir como desenvolvedor e construir projetos que gerem impacto positivo.</p>
-  
-      <p>Meu objetivo é crescer na área de tecnologia, contribuir com soluções inovadoras e transformar ideias em realidade através do código.</p>
-    </div>
+    <p>Sou apaixonado por tecnologia e design digital. Atualmente, estudo <strong>Análise e Desenvolvimento de Sistemas</strong> e desenvolvo interfaces modernas e interativas.</p>
+    <p>Meu foco é criar soluções com propósito — combinando estética, funcionalidade e inovação.</p>
   </section>
-  
-  
 
-  <section id="habilidades">
-    <h2>Minhas Habilidades</h2>
-    <div class="habilidades-container">
-
-      <div class="habilidade">
-        <i class="fab fa-html5 html-icon"></i>
-        <p>HTML</p>
-      </div>
-
-      <div class="habilidade">
-        <i class="fab fa-css3-alt css-icon"></i>
-        <p>CSS</p>
-      </div>
-
-      <div class="habilidade">
-        <i class="fab fa-js js-icon"></i>
-        <p>JavaScript</p>
-      </div>
-
-      <div class="habilidade">
-        <i class="fab fa-git-alt git-icon"></i>
-        <p>Git</p>
-      </div>
-
-      <div class="habilidade">
-        <i class="fas fa-database mysql-icon"></i>
-        <p>MySQL</p>
-      </div>
-
-      <div class="habilidade">
-        <i class="fab fa-java java-icon"></i>
-        <p>Java</p>
-      </div>
-
-      <div class="habilidade">
-        <img src="img/icons8-spring-boot-96.png" alt="Spring Boot" class="springboot-icon">
-        <p>Spring Boot</p>
-      </div>
-      
-
+  <section id="habilidades" class="section fade-up">
+    <h2>Habilidades</h2>
+    <div class="skills">
+      <i class="fab fa-html5"></i>
+      <i class="fab fa-css3-alt"></i>
+      <i class="fab fa-js"></i>
+      <i class="fab fa-react"></i>
+      <i class="fab fa-java"></i>
+      <i class="fas fa-database"></i>
     </div>
   </section>
 
-  <section id="projetos">
-    <h2>Meus Projetos</h2>
-  
-    <div class="projetos-container">
-  
-      <div class="projeto-card">
-        <h3>Sistema de Priorida Logistica CAOA</h3>
-        <a href="https://projeto-apresentacao-six.vercel.app/" target="_blank">Ver Projeto</a>
+  <section id="projetos" class="section fade-up">
+    <h2>Projetos</h2>
+    <div class="grid">
+      <div class="card zoom-in">
+        <h3>Prioridade Logística CAOA</h3>
+        <p>Sistema para priorização de peças em empresas automotivas.</p>
+        <a href="https://projeto-apresentacao-six.vercel.app/" target="_blank">Acessar</a>
       </div>
-  
-      <div class="projeto-card">
+
+      <div class="card zoom-in">
         <h3>SecureKey</h3>
-        <a href="https://github.com/andersonrodbg/securekey-frontend" target="_blank">Ver Projeto</a>
+        <p>Gestor de senhas com reconhecimento facial e segurança avançada.</p>
+        <a href="https://github.com/andersonrodbg/securekey-frontend" target="_blank">Ver no GitHub</a>
       </div>
-  
-      <div class="projeto-card">
-        <h3>Sistema de Agendamento para Barbearia</h3>
-        <a href="https://andersonrodbg.github.io/sistema-de-agendamento-barbearia/" target="_blank">Ver Projeto</a>
+
+      <div class="card zoom-in">
+        <h3>Agendamento Barbearia</h3>
+        <p>Plataforma com painel administrativo e controle de horários.</p>
+        <a href="https://andersonrodbg.github.io/sistema-de-agendamento-barbearia/" target="_blank">Acessar</a>
       </div>
-  
     </div>
   </section>
-  
 
-  <section id="contato">
+  <section id="contato" class="section fade-up">
     <h2>Contato</h2>
-    <div class="contato-icones">
-  
-      <a href="https://www.linkedin.com/in/anderson-rodrigues-braga/" target="_blank" class="linkedin">
-        <i class="fab fa-linkedin"></i>
-      </a>
-  
-      <a href="mailto:andersondudu1290@gmail.com" class="email">
-        <i class="fas fa-envelope"></i>
-      </a>
-  
-      <a href="https://wa.me/5562993332880" target="_blank" class="whatsapp">
-        <i class="fab fa-whatsapp"></i>
-      </a>
-  
-      <a href="https://github.com/andersonrodbg" target="_blank" class="github">
-        <i class="fab fa-github"></i>
-      </a>
-  
+    <p>Quer trocar uma ideia ou colaborar em um projeto?</p>
+    <div class="social">
+      <a href="mailto:andersondudu1290@gmail.com"><i class="fas fa-envelope"></i></a>
+      <a href="https://www.linkedin.com/in/anderson-rodrigues-braga/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://wa.me/5562993332880" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      <a href="https://github.com/andersonrodbg" target="_blank"><i class="fab fa-github"></i></a>
     </div>
   </section>
-  
 
- 
+  <footer>
+    <p>© 2025 Anderson Rodrigues • Feito com 💻 e criatividade</p>
+  </footer>
+
   <script src="script.js"></script>
-
 </body>
 </html>
